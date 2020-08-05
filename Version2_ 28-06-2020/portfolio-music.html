@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ashish Agrawal Music Maker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap">
+    <link rel="stylesheet" id="pagestyle" href="./styleLight.css" />
+  </head>
+<body onload="checkBox()">
+	<header>
+		<div class="logo">
+			<img id="logo" src="img/logo.png" alt="Logo">
+		</div>
+		<button class="nav-toggle" aria-label="toggle navigation">
+			<span class="hamburger"></span>
+		</button>
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+				<li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+				<li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+				<li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<button onclick="topFunction()" id="topBtn" title="Go to top">
+		<i class="fas fa-angle-up"></i>
+	</button>
+
+	<div class="intro-container">
+		<section class="intro" id="home">
+			<h1 class="section__title section__title--intro">
+				Music <strong>Maker</strong>
+			</h1>
+			<p class="section__subtitle section__subtitle--intro">Explore your musical side</p>
+			<img src="img/music.jpg" alt="" class="intro__img">
+		</section>
+		
+		<div class="portfolio-item-indv">
+			<p style="text-align: justify;">This project was built using Javascript. It makes use of six different sounds which you can use to create some beats. Simply click on any of the six pads at the bottom of the screen and each of them will produce their own unique sound. Keep clicking till you find a nice rythm. Enjoy!</p>
+			<p style="text-align: justify;">This project was inspired and taught by <a href="https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q" class="link__portfolio" target="_blank">Dev Ed</a> on YouTube.</p>
+			<p style="text-align: center;"><a href="https://github.com/ashish-agr/Projects-Other/tree/master/Music%20Maker" class="link__portfolio--other" target="_blank">Source Code</a> &emsp; <a href="https://ashish-agr.github.io/Projects-Other/Music%20Maker/" class="link__portfolio--other" target="_blank">Live Demo</a></p>
+		</div>
+	</div>
+	
+
+
+
+	<footer class="footer">
+		<a href="mailto:apagrawal2000@gmail.com" class="footer__link">apagrawal2000@gmail.com</a>
+		<ul class="social-list">
+			<li class="social-list__item">
+				<a href="https://www.facebook.com/legend2303/" class="social-list__link">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+			</li>
+			<li class="social-list__item">
+				<a href="https://www.linkedin.com/in/ashish_agr" class="social-list__link">
+					<i class="fab fa-linkedin-in"></i>
+				</a>
+			</li>
+			<li class="social-list__item">
+				<a href="https://github.com/ashish-agr" class="social-list__link">
+					<i class="fab fa-github"></i>
+				</a>
+			</li>
+			<li class="social-list__item">
+				<a href="https://twitter.com/agrawal__ashish" class="social-list__link">
+					<i class="fab fa-twitter"></i>
+				</a>
+			</li>
+			<li class="social-list__item">
+				<a href="https://www.instagram.com/ashi.ish_agr/" class="social-list__link">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</li>
+		</ul>
+		<div class="dark-container">
+			    <div class="dark mode">
+			      <input type="checkbox" class="dark-mode__toggle" id="dark-mode__toggle" onClick="swapSheet()">
+			      <label class="dark-mode__label" for="dark-mode__toggle">Dark Mode</label>
+			    </div>
+		</div>
+	</footer>
+	<script src="App.js"></script>
+</body>
+</html>

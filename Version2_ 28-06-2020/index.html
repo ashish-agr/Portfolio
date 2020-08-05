@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ashish Agrawal Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap">
+    <link id="pagestyle" rel="stylesheet" href="./styleLight.css" />
+  </head>
+<body onload="checkBox()">
+	<header>
+		<div class="logo">
+			<img id="logo" src="img/logo.png" alt="Logo">
+		</div>
+		<button class="nav-toggle" aria-label="toggle navigation">
+			<span class="hamburger"></span>
+		</button>
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+				<li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+				<li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+				<li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+				<li class="nav__item"><a href="https://ashishagrawal451498306.wordpress.com/" class="nav__link" target="_blank">My WordPress Blog</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<button onclick="topFunction()" id="topBtn" title="Go to top">
+		<i class="fas fa-angle-up"></i>
+	</button>
+
+	<div class="intro-container">
+		<section class="intro" id="home">
+			<h1 class="section__title section__title--intro">
+				Hi, I am <strong>Ashish Agrawal</strong>
+			</h1>
+			<p class="section__subtitle section__subtitle--intro">front-end dev</p>
+			<img src="img/img (2).jpg" alt="" class="intro__img">
+		</section>
+	</div>
+	<section class="my-services" id="services">
+		<h2 class="section__title section__title--services">What I do</h2>
+		<div class="services">
+			<div class="service">
+				<h3>Design</h3>
+				<p>I design websites. I love to play with new designs and am extremely meticulous about the tiny details in every project I work on. Constantly learning about colour schemes, each passing day teaches me a new design structure.</p>
+			</div>
+			<div class="service">
+				<h3>Development</h3>
+				<p>Not just design, but I can code the interface that I design for you. With some swift CSS and little touches of vanilla Javascript, I can create a website much like the one you are looking at, customised for you.</p>
+			</div>
+			<div class="service">
+				<h3>Content Creation</h3>
+				<p>Let it be Banners, Websites, Posters or a Blog, I do my best in creating esthetically pleasing content. I am learning more and more about creating beautiful content every day, to serve people from all walks of life.</p>
+			</div>
+		</div>
+		<a href="#work" class="btn">My Work</a>
+	</section>
+	<div class="about-me-container">
+		<section class="about-me" id="about">
+			<h2 class="section__title section__title--about">Who I am</h2>
+			<p class="section__subtitle section__subtitle--about">Web Developer based out of Ahmedabad</p>
+			<div class="about-me__body">
+				<p style="text-align: justify;">I'm a 2nd-year B.Tech student studying CSE at SRM Institute of Science and Technology, at the Kattankulathur campus in Chennai. I am exploring web development & cybersecurity and currently training in PHP, Python and ReactJS.</p>
+				<p style="text-align: justify;">I am actively looking for learning opportunities in the form of training or internships. Also, take a look at my work and if you believe I can fulfill your website requirements, I check my <a href="#footer" class="link__portfolio--other">email</a> everyday. I would love to develop personal websites and portfolios for you.</p>
+			</div>
+
+			<img src="img/img (3).jpg" alt="" class="about-me__img">
+		</section>
+	</div>
+	<div class="my-work-container">
+		<section class="my-work" id="work">
+			<h2 class="section__title section__title--work">My Work</h2>
+			<p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+			<div class="portfolio">
+				<a href="portfolio-music.html" class="portfolio__item">
+					<img src="img/music.jpg" alt="Music Maker" class="portfolio__img">
+				</a>	
+
+				<a href="portfolio-rps.html" class="portfolio__item">
+					<img src="img/rps.jpg" alt="Rock Paper Scissors" class="portfolio__img">
+				</a>	
+
+				<a href="portfolio-tictactoe.html" class="portfolio__item">
+					<img src="img/tictactoe.jpg" alt="Tic Tac Toe AI" class="portfolio__img">
+				</a>	
+
+				<a href="portfolio-formval.html" class="portfolio__item">
+					<img src="img/form.jpg" alt="Form Validation" class="portfolio__img">
+				</a>
+
+				<a href="portfolio-todo.html" class="portfolio__item">
+					<img src="img/todo.jpg" alt="Todo List" class="portfolio__img">
+				</a>	
+		<!--
+				<a href="portfolio-todo.html" class="portfolio__item">
+					<img src="img/recipe.jpg" alt="Recipe Maker" class="portfolio__img">
+				</a>
+
+				<a href="portfolio-todo.html" class="portfolio__item">
+					<img src="img/tictactoeDumb.jpg" alt="Tic Tac Toe Dumb" class="portfolio__img">
+				</a> -->
+
+				<a href="portfolio-portfolio-v1.html" class="portfolio__item">
+					<img src="img/portfolio_v1.jpg" alt="Portfolio Version 1" class="portfolio__img">
+				</a>	
+			</div>
+
+		</section>
+	</div>
+	<footer class="footer" id="footer">
+		<a href="mailto:apagrawal2000@gmail.com" class="footer__link">apagrawal2000@gmail.com</a>
+		<ul class="social-list">
+			<li class="social-list__item">
+				<a href="https://www.facebook.com/legend2303/" class="social-list__link" target="_blank">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+			</li>
+			<li class="social-list__item">
+				<a href="https://www.linkedin.com/in/ashish-agr" class="social-list__link" target="_blank">
+					<i class="fab fa-linkedin-in"></i>
+				</a>
+			</li>
+			<li class="social-list__item">
+				<a href="https://github.com/ashish-agr" class="social-list__link" target="_blank">
+					<i class="fab fa-github"></i>
+				</a>
+			</li>
+			<li class="social-list__item">
+				<a href="https://twitter.com/agrawal__ashish" class="social-list__link" target="_blank">
+					<i class="fab fa-twitter"></i>
+				</a>
+			</li>
+			<li class="social-list__item">
+				<a href="https://www.instagram.com/ashi.ish_agr/" class="social-list__link" target="_blank">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</li>
+			<li class="social-list__item">
+				<a href="https://ashishagrawal451498306.wordpress.com/" class="social-list__link" target="_blank">
+					<i class="fab fa-wordpress"></i>
+				</a>
+			</li>
+		</ul>
+		<div class="dark-container">
+			    <div class="dark mode">
+			      <input type="checkbox" class="dark-mode__toggle" id="dark-mode__toggle" onClick="swapSheet()">
+			      <label class="dark-mode__label" for="dark-mode__toggle">Dark Mode</label>
+			    </div>
+		</div>
+	</footer>
+	<script src="App.js"></script>
+</body>
+</html>
